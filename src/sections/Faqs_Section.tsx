@@ -10,7 +10,7 @@ function Faqs_Section() {
   const [activeFaq, setActiveFaq] = useState<IFaqOptions>("generalInformation");
   return (
     <section className="bg-black py-20 xs:max-md:py-10">
-      <div className="w-[80%] xs:max-md:w-[90%] xs:max-md:px-2 mx-auto space-y-10 xs:max-md:space-y-5">
+      <div className="w-[80%] xs:max-md:w-[90%]  mx-auto space-y-10 xs:max-md:space-y-5">
         <h2 className="text-6xl xs:max-md:text-2xl font-instrument-serif! tracking-[2%] text-white">
           FAQs
         </h2>
@@ -32,7 +32,7 @@ function Faqs_Section() {
             </ul>
           </div>
           <div className="w-[70%]  xs:max-md:w-full flex justify-end xs:max-md:justify-normal">
-            <ul className="w-[80%] xs:max-md:w-full space-y-5">
+            <ul className="w-[80%] xs:max-md:w-full space-y-5 xs:max-md:px-2">
               {faqOptions[activeFaq].map((option) => {
                 return (
                   <li
