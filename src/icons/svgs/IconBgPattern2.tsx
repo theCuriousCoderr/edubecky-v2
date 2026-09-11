@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function IconBgPattern2() {
   return (
