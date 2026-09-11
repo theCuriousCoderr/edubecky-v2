@@ -1,4 +1,4 @@
-
+import contactEmail from "./contactEmail";
 
 const faqOptions = {
   generalInformation: [
@@ -80,8 +80,7 @@ const faqOptions = {
     {
       id: "13",
       question: "Do you offer family discounts?",
-      answer:
-        "Yes. If 3 children from the same family enroll, you'll receive a discounted rate. Email me via beckyakpukpula@gmail.com to discuss the package that works best for your family.",
+      answer: `Yes. If 3 children from the same family enroll, you'll receive a discounted rate. Email me via ${contactEmail} to discuss the package that works best for your family.`,
     },
     {
       id: "14",
@@ -130,7 +129,7 @@ const faqOptions = {
         "Yes. I offer targeted revision for 11+ exams, SAT, WAEC, NECO, JAMB, Checkpoint, IGCSE, and other standardized exams, including past paper practice and exam technique.",
     },
   ],
-} as const
+} as const;
 
 const faqTabs = [
   {
@@ -153,8 +152,8 @@ const faqTabs = [
     id: "gettingStarted",
     label: "Getting Started",
   },
-] as const
+] as const;
 
-export type IFaqOptions = keyof typeof faqOptions
+export type IFaqOptions = keyof typeof faqOptions;
 
 export { faqOptions, faqTabs };

@@ -25,7 +25,7 @@ function HeroSection() {
         {/* partitions */}
         <div className="mt-5 xs:max-md:mt-0 flex xs:max-md:flex-col gap-5">
           {/* left section */}
-          <div className="w-1/2 xs:max-md:w-full space-y-5 xs:max-md:space-y-2">
+          <div className="w-1/2 xs:max-md:w-full space-y-5 xs:max-md:space-y-3">
             {/* title */}
             <h1 className="font-instrument-serif! text-5xl xs:max-md:text-4xl leading-14 xs:max-md:leading-12 capitalize">
               {heroSectionContents.title}

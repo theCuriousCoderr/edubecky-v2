@@ -10,12 +10,12 @@ function Faqs_Section() {
   const [activeFaq, setActiveFaq] = useState<IFaqOptions>("generalInformation");
   return (
     <section className="bg-black py-20 xs:max-md:py-10">
-      <div className="w-[80%] xs:max-md:w-[90%] mx-auto space-y-10 xs:max-md:space-y-5">
+      <div className="w-[80%] xs:max-md:w-[90%] xs:max-md:px-2 mx-auto space-y-10 xs:max-md:space-y-5">
         <h2 className="text-6xl xs:max-md:text-2xl font-instrument-serif! tracking-[2%] text-white">
           FAQs
         </h2>
         <div className="flex xs:max-md:flex-col xs:max-md:gap-5">
-          <div className="w-[30%] xs:max-md:w-full xs:max-md:overflow-auto no-scrollbar">
+          <div className="w-[30%] xs:max-md:w-full xs:max-md:overflow-auto">
             <ul className="space-y-7 xs:max-md:space-y-0 xs:max-md:flex xs:max-md:gap-7">
               {faqTabs.map((tab) => {
                 return (
@@ -31,7 +31,7 @@ function Faqs_Section() {
               })}
             </ul>
           </div>
-          <div className="w-[70%]   xs:max-md:w-full flex justify-end xs:max-md:justify-normal">
+          <div className="w-[70%]  xs:max-md:w-full flex justify-end xs:max-md:justify-normal">
             <ul className="w-[80%] xs:max-md:w-full space-y-5">
               {faqOptions[activeFaq].map((option) => {
                 return (

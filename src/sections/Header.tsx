@@ -14,7 +14,7 @@ function Header() {
     setShowDropDown(!showDropDown);
   }
   return (
-    <header className="xs:max-md:fixed xs:max-md:w-full xs:max-md:top-0 relative z-10 border-b border-edubecks-pink8F/30 bg-white xs:max-md:h-auto h-22">
+    <header className="xs:max-md:fixed xs:max-md:z-20 xs:max-md:w-full xs:max-md:top-0 relative z-10 border-b border-edubecks-pink8F/30 bg-white xs:max-md:h-auto h-22">
       {/* desktop view header */}
       <div className="xs:max-md:hidden w-[80%] mx-auto tw-justify-between py-5">
         {/* Header Logo */}
@@ -65,7 +65,7 @@ function Header() {
         <div hidden={!showDropDown} className="mt-5 space-y-3">
           {/* Register Your Ward */}
           <div>
-            <button className="w-full tw-all-center gap-3 items-center py-3 px-5 rounded-[100px] bg-edubecks-grayF9 hover:bg-white shadow-[0px_0px_4px_0px_#8F1A3840_inset]">
+            <button onClick={bookACall} className="w-full tw-all-center gap-3 items-center py-3 px-5 rounded-[100px] bg-edubecks-grayF9 hover:bg-white shadow-[0px_0px_4px_0px_#8F1A3840_inset]">
               <div className="size-5 tw-all-center">
                 <IconRegisterYourWard />
               </div>
@@ -76,7 +76,7 @@ function Header() {
           </div>
           {/* Book A Call */}
           <div>
-            <button className="w-full tw-all-center gap-3 py-3 px-5 rounded-[100px] bg-edubecks-pink8F hover:bg-edubecks-pink8F/80 shadow-[0px_0px_4px_0px_#8F1A3840_inset]">
+            <button onClick={bookACall} className="w-full tw-all-center gap-3 py-3 px-5 rounded-[100px] bg-edubecks-pink8F hover:bg-edubecks-pink8F/80 shadow-[0px_0px_4px_0px_#8F1A3840_inset]">
               <div className="size-5 tw-all-center">
                 <IconBookACall />
               </div>

@@ -24,7 +24,7 @@ function What_We_Will_Work_On_Section() {
               <figure className="absolute xs:max-md:relative h-full xs:max-md:max-h-[40svh] xs:max-md:-rotate-z-40 w-1/2 xs:max-md:w-full rotate-30 right-[20%] xs:max-md:right-[5%]">
                 <img
                   src="/what-we-will-work-on-first-card.webp"
-                  className="size-full object-contain object-top"
+                  className="size-full object-contain object-top xs:max-md:mt-5"
                 />
               </figure>
             </div>
