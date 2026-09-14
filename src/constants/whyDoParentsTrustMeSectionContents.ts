@@ -6,7 +6,7 @@ const whyDoParentsTrustMeSectionContents = {
     },
     {
       id: "reason-2",
-      text: "10+ years teaching across Nigeria, North America, and Europe fluent in UK, US, and Nigerian curricula, from KS2, KS3 to IGCSE to Ontario.",
+      text: "10+ years teaching across Nigeria, North America, and Europe. Fluent in UK, US, and Nigerian curricula, from KS2, KS3 to IGCSE to Ontario.",
     },
     {
       id: "reason-3",

@@ -21,11 +21,21 @@ function What_Parents_Say_About_Working_With_Me_Section() {
                   className="relative z-10  w-[49%] xs:max-md:w-full p-5 bg-white rounded-2xl overflow-hidden space-y-2"
                 >
                   <div
-                    className={`${isEven ? "opacity-10" : "opacity-100"} absolute -z-10 w-[50%] xs:max-md:w-[70%] -right-5 top-0 xs:max-md:-bottom-10 tw-all-center xs:max-md:items-end overflow-hidden`}
+                    className={`${isEven ? "opacity-10" : "opacity-100"} absolute -z-10 w-[50%] xs:max-md:w-[70%] -right-5 top-0 -bottom-5 xs:max-md:-bottom-10 flex justify-center items-end overflow-hidden`}
                   >
                     {isEven ? <IconBgPattern1 /> : <IconBgPattern2 />}
                   </div>
-                  <p className="xs:max-md:text-sm">{review.text}</p>
+                  <div className="space-y-4">
+                    {review.texts.map((text) => (
+                      <p
+                        key={`${review.id}-${text.slice(10)}`}
+                        className="xs:max-md:text-sm"
+                      >
+                        {text}
+                      </p>
+                    ))}
+                  </div>
+
                   <figure className="size-6 tw-all-center  rounded-full">
                     <Flag />
                   </figure>
